@@ -1,6 +1,6 @@
 import { sumOfTwo } from './sumOfTwo';
-
-xdescribe(sumOfTwo.name, () => {
+import {test, describe, it, expect} from "vitest"
+describe(sumOfTwo.name, () => {
     it('Test 1', () => {
         // arrange
         const a = [1, 2, 3];
@@ -14,3 +14,5 @@ xdescribe(sumOfTwo.name, () => {
         expect(response).toBe(true);
     });
 });
+
+

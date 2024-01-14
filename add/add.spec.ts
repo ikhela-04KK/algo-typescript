@@ -1,6 +1,7 @@
 import { add, add2 } from './add';
+import {test, describe,it, expect} from "vitest"
 
-xdescribe(add.name, () => {
+describe(add.name, () => {
     it('test 1', () => {
         // act
         const result = add(1, 2);
@@ -18,7 +19,7 @@ xdescribe(add.name, () => {
     });
 });
 
-xdescribe(add2.name, () => {
+describe(add2.name, () => {
     // console.log(add2(2,3));
     it('test 1', () => {
         // arrange
