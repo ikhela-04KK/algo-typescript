@@ -28,7 +28,7 @@ export function BestTimeBuySell(price:number[]):number{
       }
       else{
          let current_profit = price[i] - buy_price
-         profit = Math.max(current_profit,current_profit)
+         profit = Math.max(current_profit,profit)
       }
    }
    return profit	

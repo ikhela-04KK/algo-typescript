@@ -12,19 +12,19 @@
 // }
 
 // complexity is O(n)
-// function twoSum(nums: number[], target: number):number[] |boolean {
-//     let hash: { [key: number]: number } = {};
-//     for (let i = 0; i < nums.length; i++) {
-//         let diff = target - nums[i];
-//         if (diff in hash) {
-//             return [hash[diff], i];
-//         } else {
-//             hash[nums[i]] = i;
-//         }
-//     }
-//     console.log(hash)
-//     return false
-// }
+function twoSum(nums: number[], target: number):number[] |boolean {
+    let hash: { [key: number]: number } = {};
+    for (let i = 0; i < nums.length; i++) {
+        let diff = target - nums[i];
+        if (diff in hash) {
+            return [hash[diff], i];
+        } else {
+            hash[nums[i]] = i;
+        }
+    }
+    console.log(hash)
+    return false
+}
 
 function sumOfTwo(a:number[], b:number[],target:number):number[] | boolean{
     let hashOfa: {[key:number]:number} = {}
@@ -52,7 +52,6 @@ sumOfTwo([1, 2, 3],[10, 20, 30, 40], 42)
 
 // using difference syntaxe 
 function sumOfTwoHas(a:number[], b:number[],target:number):number[] | boolean{
-    let hashOfa: {[key:number]:number} = {}
     const setB = new Set(b); 
 
     for (let i = 0 ; i < a.length ;i++){

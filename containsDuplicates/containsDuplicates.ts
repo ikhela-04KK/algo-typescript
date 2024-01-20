@@ -10,7 +10,7 @@ export function containsDuplicates(a: number[]){
             console.log("this is a number " + a[i])
             return true
         }
-       set.add(a[i])
+        set.add(a[i])
     }
     return false
 
