@@ -20,6 +20,6 @@ public class QuickFind {
                 id[i] = id[qid];  // change all entries id[p] to id[q]
             }
         }
-
+        
     }
 }
